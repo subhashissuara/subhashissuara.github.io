@@ -646,6 +646,21 @@ img {
   transition: all 0.3s ease;
 }
 
+.projects-more {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.projects-more h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.projects-more a {
+  color: var(--highlight-text-color);
+  font-weight: bold;
+}
+
 /* Project Mobile */
 @media screen and (max-width: 768px) {
   .project-description {
