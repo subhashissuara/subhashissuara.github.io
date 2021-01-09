@@ -775,7 +775,7 @@ img {
 
 .contact-section .contact-btn button {
   margin-top: auto;
-  width: fit-content;
+  width: 180px;
   border: none;
   background: none;
   cursor: pointer;
