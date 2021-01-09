@@ -119,8 +119,10 @@ img {
   position: relative;
 }
 
-.icon-btn-neo-hover:hover {
-  box-shadow: var(--outer-no-shadow);
+@media (hover: hover) and (pointer: fine) {
+  .icon-btn-neo-hover:hover {
+    box-shadow: var(--outer-no-shadow);
+  }
 }
 
 .icon-btn-neo-hover::after {
@@ -143,8 +145,10 @@ img {
   position: relative;
 }
 
-.text-btn-neo-hover:hover {
-  box-shadow: var(--outer-no-shadow);
+@media (hover: hover) and (pointer: fine) {
+  .text-btn-neo-hover:hover {
+    box-shadow: var(--outer-no-shadow);
+  }
 }
 
 .text-btn-neo-hover::after {
@@ -167,8 +171,10 @@ img {
   position: relative;
 }
 
-.icon-btn-glass-hover:hover {
-  box-shadow: var(--outer-no-shadow);
+@media (hover: hover) and (pointer: fine) {
+  .icon-btn-glass-hover:hover {
+    box-shadow: var(--outer-no-shadow);
+  }
 }
 
 .icon-btn-glass-hover::after {
@@ -193,8 +199,10 @@ img {
   position: relative;
 }
 
-.text-btn-glass-hover:hover {
-  box-shadow: var(--outer-no-shadow);
+@media (hover: hover) and (pointer: fine) {
+  .text-btn-glass-hover:hover {
+    box-shadow: var(--outer-no-shadow);
+  }
 }
 
 .text-btn-glass-hover::after {
