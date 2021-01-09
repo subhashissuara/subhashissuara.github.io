@@ -744,6 +744,7 @@ img {
   padding: 15px;
   font-size: 18px;
   transition: all 0.3 ease;
+  -webkit-appearance: none;
 }
 
 .contact-section .input-box-textarea {
@@ -757,6 +758,7 @@ img {
   padding: 15px;
   font-size: 18px;
   transition: all 0.3 ease;
+  -webkit-appearance: none;
 }
 
 ::placeholder {
