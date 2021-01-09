@@ -750,6 +750,7 @@ img {
   height: 250px;
   width: 100%;
   margin: 15px;
+  margin-bottom: 35px;
   background-color: transparent;
   border: none;
   border-radius: 10px;
@@ -763,7 +764,8 @@ img {
 }
 
 .contact-section .contact-btn button {
-  margin-top: 20px;
+  margin-top: auto;
+  width: 200px;
   border: none;
   background: none;
   cursor: pointer;
