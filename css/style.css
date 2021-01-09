@@ -114,6 +114,54 @@ img {
   box-shadow: var(--outer-shadow);
 }
 
+/* Icon Button Neomorphism Hover */
+.icon-btn-neo-hover {
+  position: relative;
+}
+
+.icon-btn-neo-hover:hover {
+  box-shadow: var(--outer-no-shadow);
+}
+
+.icon-btn-neo-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 24%;
+  transition: all 0.3s ease;
+}
+
+.icon-btn-neo-hover::after {
+  box-shadow: var(--inner-shadow);
+}
+
+/* Text Button Neomorphism Hover */
+.text-btn-neo-hover {
+  position: relative;
+}
+
+.text-btn-neo-hover:hover {
+  box-shadow: var(--outer-no-shadow);
+}
+
+.text-btn-neo-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+  transition: all 0.3s ease;
+}
+
+.text-btn-neo-hover:hover::after {
+  box-shadow: var(--inner-shadow-bigger);
+}
+
 /* Icon Button Glass Hover */
 .icon-btn-glass-hover {
   position: relative;
@@ -666,6 +714,59 @@ img {
   .project-description {
     text-align: center;
   }
+}
+
+/* Contact */
+.contact-section {
+  padding: 80px 0;
+  min-height: 100vh;
+}
+
+.contact-section .contact-form {
+  width: 100%;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+.contact-section .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 15px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  transition: all 0.3 ease;
+}
+
+.contact-section .input-box-textarea {
+  height: 250px;
+  width: 100%;
+  margin: 15px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  transition: all 0.3 ease;
+}
+
+::placeholder {
+  color: var(--color-black-lighter);
+}
+
+.contact-section .contact-btn button {
+  margin-top: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 /* Copyright Footer */
