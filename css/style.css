@@ -109,6 +109,10 @@ img {
   color: var(--color-black);
 }
 
+.section.hide-section {
+  display: none;
+}
+
 /* Shadow Effects */
 .outer-shadow {
   box-shadow: var(--outer-shadow);
@@ -238,13 +242,22 @@ img {
   -webkit-filter: blur(px); */
 }
 
+@keyframes bgSlideAnimation {
+  from {
+    background-position: 0 400px;
+  }
+  to {
+    background-position: 400px 0;
+  }
+}
+
 /* Header */
 .header {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 998;
+  z-index: 99;
   padding: 20px;
 }
 
@@ -378,13 +391,19 @@ img {
     right: 0;
     width: 100%;
     height: 100%;
-    z-index: 999;
     padding: 0 15px;
     background-color: var(--color-gray-white);
     overflow-y: scroll;
     z-index: -1;
     opacity: 0;
     visibility: hidden;
+  }
+
+  .navbar-mobile.nav-mobile-open {
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in;
   }
 
   .navbar-mobile .nav-menu {
@@ -428,17 +447,34 @@ img {
     transition: all 0.3s ease;
   }
 
+  .menu-fade-out {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-gray-white);
+    visibility: hidden;
+  }
+
+  .menu-fade-out.effect-active {
+    z-index: 1000;
+    visibility: visible;
+    animation: fadeOut 0.3s ease-out;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
   .text-btn-glass-hover::after {
     border-radius: 5%;
-  }
-}
-
-@keyframes bgSlideAnimation {
-  from {
-    background-position: 0 400px;
-  }
-  to {
-    background-position: 400px 0;
   }
 }
 
