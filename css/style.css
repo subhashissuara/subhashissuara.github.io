@@ -432,7 +432,9 @@ img {
   }
 
   .navbar-mobile .nav-menu li {
+    width: 100%;
     margin: 24px 5px;
+    text-align: center;
   }
 
   .navbar-mobile .nav-menu a {
