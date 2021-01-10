@@ -478,11 +478,22 @@ img {
   }
 }
 
+/* Section Common */
+.section {
+  /* Negative Margin = Footer Height */
+  margin-bottom: -40px;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    /* Change from Desktop View Changes */
+    margin-bottom: 50px;
+  }
+}
+
 /* Home */
 .home-section .fullscreen {
   min-height: 100vh;
-  /* Negative Margin = Footer Height */
-  /* margin-bottom: -40px; */
   align-items: center;
 }
 
@@ -537,8 +548,6 @@ img {
 @media screen and (max-width: 768px) {
   .home-section .fullscreen {
     padding-top: 100px;
-    /* Margin For Footer */
-    /* margin-bottom: 80px; */
   }
 
   .home-section .home-text,
@@ -818,7 +827,7 @@ img {
 }
 
 /* Copyright Footer */
-/* .copyright-footer {
+.copyright-footer {
   height: 40px;
   width: 100%;
   padding: 10px;
@@ -894,4 +903,4 @@ img {
     animation: colorAnimationFooter 10s linear infinite;
     background-size: 600% 100%;
   }
-} */
+}
