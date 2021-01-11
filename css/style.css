@@ -12,7 +12,23 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 
-/* Variables */
+/* Background Animations */
+.bg-effect {
+  z-index: -999;
+  position: fixed;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/images/bgeffects/memphis-colorful.png);
+  background-repeat: repeat;
+  background-size: auto;
+  animation: bgSlideAnimation 24s linear infinite;
+  /* transition: background-image 0.5 ease; */
+  /* filter: blur(5px);
+  -webkit-filter: blur(px); */
+}
+
+/* Light Mode Variables */
 :root {
   /* Highlighted Text Color */
   --highlight-text-color: #48bfe3;
@@ -32,6 +48,41 @@
   --outer-no-shadow: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
   --inner-shadow: inset 4px 4px 4px #d0d0d0, inset -4px -4px 4px #f8f8f8;
   --inner-shadow-bigger: inset 5px 5px 5px #d0d0d0, inset -5px -5px 5px #f8f8f8;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+  /* Whites */
+  --color-black: #ffffff;
+  --color-black-light: #353535;
+  --color-black-lighter: #2b2c2f;
+
+  /* Grays */
+  --color-dark-gray: #ffffff;
+  --color-gray: #ffffff;
+  --color-gray-white: #bbbbbb;
+
+  /* Shadows */
+  --outer-shadow: 4px 4px 4px #222327, -4px -4px 4px #363636;
+  --outer-no-shadow: 0 0 0 #222327, 0 0 0 #363636;
+  --inner-shadow: inset 4px 4px 4px #222327, inset -4px -4px 4px #363636;
+  --inner-shadow-bigger: inset 5px 5px 5px #222327, inset -5px -5px 5px 363636;
+}
+
+body.dark-mode .bg-effect {
+  z-index: -999;
+  position: fixed;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  /* background-image: url(../assets/images/bgeffects/memphis-colorful.png); */
+  background-repeat: repeat;
+  background-size: auto;
+  animation: bgSlideAnimation 24s linear infinite;
+  /* transition: background-image 0.5 ease; */
+  /* filter: blur(5px);
+  -webkit-filter: blur(px); */
 }
 
 /* Global */
@@ -224,22 +275,6 @@ img {
 
 .text-btn-glass-hover:hover::after {
   box-shadow: var(--inner-shadow-bigger);
-}
-
-/* Background Animations */
-.bg-effect {
-  z-index: -999;
-  position: fixed;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url(../assets/images/bgeffects/memphis-colorful.png);
-  background-repeat: repeat;
-  background-size: auto;
-  animation: bgSlideAnimation 24s linear infinite;
-  /* transition: background-image 0.5 ease; */
-  /* filter: blur(5px);
-  -webkit-filter: blur(px); */
 }
 
 @keyframes bgSlideAnimation {
@@ -493,6 +528,13 @@ img {
   }
 }
 
+.about-section,
+.project-section,
+.contact-section {
+  padding: 150px 0px;
+  min-height: 100vh;
+}
+
 /* Home */
 .home-section .fullscreen {
   min-height: 100vh;
@@ -568,11 +610,6 @@ img {
 }
 
 /* About */
-.about-section {
-  padding: 80px 0;
-  min-height: 100vh;
-}
-
 .about-section .about-info {
   padding: 10px 30px;
   flex: 0 0 100%;
@@ -651,10 +688,6 @@ img {
 
 /* About Mobile */
 @media screen and (max-width: 768px) {
-  .about-section {
-    padding: 30px 0px;
-  }
-
   .about-section .about-info {
     padding: 0px 30px;
   }
@@ -691,11 +724,6 @@ img {
 }
 
 /* Project */
-.project-section {
-  padding: 80px 0;
-  min-height: 100vh;
-}
-
 .project-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
@@ -773,10 +801,9 @@ img {
 
 /* Contact */
 .contact-section {
-  padding: 80px 0;
-  min-height: 100vh;
+  /* Avoid scroll bar at 100vh with enough space */
+  padding-bottom: 100px;
 }
-
 .contact-section .contact-form {
   width: 100%;
   padding: 0px 30px;
