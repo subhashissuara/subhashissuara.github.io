@@ -2,6 +2,9 @@
   TO DO
   - Preloader
   - Store Dark Mode Preference
+  - Optimize Images
+  - SEO
+  - Google Analytics
   - Choose Highlight Text Color in Menu
   - Choose Background Patterns in Menu
 */
