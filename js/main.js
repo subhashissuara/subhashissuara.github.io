@@ -59,6 +59,11 @@ document.querySelector("body").onload = () => {
     navMenuMobile
       .querySelector(`a[href="${hashId}"]`)
       .classList.add("nav-active");
+
+    // Reset Contact Form after FormSpree redirect
+    if (hashId === "#contact") {
+      document.querySelector(".contact-form form").reset();
+    }
   }
 };
 
