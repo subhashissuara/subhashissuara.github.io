@@ -311,17 +311,20 @@
                     <form action="https://formspree.io/f/mpzokkwy" method="POST">
                         <div class="column">
                             <input type="text" name="name" placeholder="What's your name?"
-                                class="input-box outer-shadow">
-                            <input type="email" name="_replyto" placeholder="Your email?"
-                                class="input-box outer-shadow">
+                                class="input-box outer-shadow" required>
+                            <input type="email" name="_replyto" placeholder="Your email?" class="input-box outer-shadow"
+                                required>
                             <input type="text" name="subject" placeholder="What's the subject?"
-                                class="input-box outer-shadow">
+                                class="input-box outer-shadow" required>
                             <textarea name="message" placeholder="Type your message here..."
-                                class="input-box-textarea outer-shadow"></textarea>
+                                class="input-box-textarea outer-shadow" required></textarea>
                         </div>
                         <div class="contact-btn">
                             <button type="submit" class="section-button outer-shadow text-btn-glass-hover">
                                 Get In Touch
+                            </button>
+                            <button type="reset" class="section-button outer-shadow text-btn-glass-hover">
+                                Reset Form
                             </button>
                         </div>
                     </form>

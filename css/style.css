@@ -804,10 +804,18 @@ img {
 
 .contact-section .contact-btn button {
   margin-top: auto;
+  margin: 0px 15px;
   width: 180px;
   border: none;
   background: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section .contact-btn button {
+    margin-top: auto;
+    margin: 15px 0px;
+  }
 }
 
 /* Copyright Footer */

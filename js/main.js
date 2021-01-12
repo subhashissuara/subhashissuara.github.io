@@ -1,5 +1,7 @@
 /* 
   TO DO
+  - Preloader
+  - Store Dark Mode Preference
   - Choose Highlight Text Color in Menu
   - Choose Background Patterns in Menu
 */
