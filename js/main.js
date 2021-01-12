@@ -120,13 +120,15 @@ document.addEventListener("click", (event) => {
 })();
 
 // Dark & Light Mode
-// modeBtn = document.querySelector(".mode-btn");
+modeBtn = document.querySelector(".mode-btn");
 
-// modeBtn.addEventListener("click", () => {
-//   modeBtn.querySelector("i").classList.toggle("fa-sun");
-//   modeBtn.querySelector("i").classList.toggle("fa-moon");
-//   document.body.classList.toggle("dark-mode");
-// });
+modeBtn.addEventListener("click", () => {
+  modeBtn.querySelector("i").classList.toggle("fa-sun");
+  modeBtn.querySelector("i").classList.toggle("fa-moon");
+  document.body.classList.toggle("dark-mode");
+  document.querySelector(".bg").classList.toggle("bg-effect-light");
+  document.querySelector(".bg").classList.toggle("bg-effect-dark");
+});
 
 window.addEventListener("load", () => {
   if (document.body.classList.contains("dark-mode")) {
