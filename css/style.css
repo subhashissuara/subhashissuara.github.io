@@ -691,7 +691,7 @@ img {
 .project-title {
   width: 100%;
   margin: 10px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   text-align: center;
 }
@@ -700,6 +700,7 @@ img {
   margin: 0 20px;
   /* To give space along with margin auto project-links */
   margin-bottom: 24px;
+  font-size: 18px;
   font-weight: 500;
   text-align: justify;
 }
