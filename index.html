@@ -13,8 +13,11 @@
 </head>
 
 <body>
+    <!-- Background Animation Start -->
     <div class="bg bg-effect-light">
     </div>
+    <!-- Background Animation End -->
+
     <!-- Header Start -->
     <header class="header">
         <div class="container">
@@ -299,14 +302,22 @@
                 <div class="section-title">
                     <h2>CONTACT ME</h2>
                 </div>
-
+                <div class="contact-email">
+                    <h2>You can submit the form below or email me at
+                        <a href="mailto:subhashissuara@gmail.com">subhashissuara@gmail.com</a>
+                    </h2>
+                </div>
                 <div class="contact-form">
-                    <form>
+                    <form action="https://formspree.io/f/mpzokkwy" method="POST">
                         <div class="column">
-                            <input type="text" placeholder="Name" class="input-box outer-shadow">
-                            <input type="email" placeholder="Email" class="input-box outer-shadow">
-                            <input type="text" placeholder="Subject" class="input-box outer-shadow">
-                            <textarea placeholder="Your Message" class="input-box-textarea outer-shadow"></textarea>
+                            <input type="text" name="name" placeholder="What's your name?"
+                                class="input-box outer-shadow">
+                            <input type="email" name="_replyto" placeholder="Your email?"
+                                class="input-box outer-shadow">
+                            <input type="text" name="subject" placeholder="What's the subject?"
+                                class="input-box outer-shadow">
+                            <textarea name="message" placeholder="Type your message here..."
+                                class="input-box-textarea outer-shadow"></textarea>
                         </div>
                         <div class="contact-btn">
                             <button type="submit" class="section-button outer-shadow text-btn-glass-hover">

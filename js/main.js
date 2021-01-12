@@ -1,4 +1,8 @@
-// Needs update if link ids are changed
+/* 
+  TO DO
+  - Choose Highlight Text Color in Menu
+  - Choose Background Patterns in Menu
+*/
 
 const navMenuBtn = document.querySelector(".menu-btn");
 const navMenuDesktop = document.querySelector(".navbar-desktop");
