@@ -135,7 +135,28 @@ modeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
   document.querySelector(".bg").classList.toggle("bg-effect-light");
   document.querySelector(".bg").classList.toggle("bg-effect-dark");
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
 });
+
+(function storedThemeLoad() {
+  if (localStorage.getItem("theme") !== null) {
+    if (localStorage.getItem("theme") === "dark") {
+      modeBtn.querySelector("i").classList.add("fa-sun");
+      document.body.classList.add("dark-mode");
+      document.querySelector(".bg").classList.remove("bg-effect-light");
+      document.querySelector(".bg").classList.add("bg-effect-dark");
+    } else {
+      modeBtn.querySelector("i").classList.add("fa-moon");
+      document.body.classList.remove("dark-mode");
+      document.querySelector(".bg").classList.add("bg-effect-light");
+      document.querySelector(".bg").classList.remove("bg-effect-dark");
+    }
+  }
+})();
 
 window.addEventListener("load", () => {
   if (document.body.classList.contains("dark-mode")) {
