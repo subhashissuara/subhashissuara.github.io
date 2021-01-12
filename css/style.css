@@ -58,7 +58,7 @@ body.dark-mode {
   --color-white: #000000;
 
   /* Shadows */
-  --outer-shadow: 1px 1px 1px #201d24, -1px -1px 1px #2e2e2e;
+  --outer-shadow: 2px 2px 2px #201d24, -2px -2px 2px #2e2e2e;
   --outer-no-shadow: 0 0 0 #201d24, 0 0 0 #2e2e2e;
   --inner-shadow-before: inset 1px 1px 1px #201d24, inset -1px -1px 1px #2e2e2e;
   --inner-shadow-after: inset 1px 1px 1px #201d24, inset -1px -1px 1px #2e2e2e;
