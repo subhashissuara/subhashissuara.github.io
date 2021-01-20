@@ -72,6 +72,15 @@ body.dark-mode {
   -webkit-filter: blur(4px);
 }
 
+@keyframes bgSlideAnimation {
+  from {
+    background-position: 0 400px;
+  }
+  to {
+    background-position: 400px 0;
+  }
+}
+
 /* Global */
 * {
   margin: 0;
@@ -209,15 +218,6 @@ img {
 
 .text-btn-glass-hover:hover::after {
   box-shadow: var(--inner-shadow-after);
-}
-
-@keyframes bgSlideAnimation {
-  from {
-    background-position: 0 400px;
-  }
-  to {
-    background-position: 400px 0;
-  }
 }
 
 /* Header */

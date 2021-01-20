@@ -22,8 +22,8 @@ function menuFadeOutEffect() {
   }, 300);
 }
 
-// Detect & navigate from id in URL if detected on first load
-document.querySelector("body").onload = () => {
+// Function to change page based on id
+function changePage(resetContactForm = true) {
   let IdValid = false;
   for (let index = 0; index < hashIdList.length; index++) {
     if (window.location.hash === hashIdList[index]) {
@@ -57,11 +57,17 @@ document.querySelector("body").onload = () => {
       .classList.add("nav-active");
 
     // Reset Contact Form after FormSpree redirect
-    if (hashId === "#contact") {
+    if (hashId === "#contact" && resetContactForm) {
       document.querySelector(".contact-form form").reset();
     }
   }
-};
+}
+
+// Detect & navigate from id in URL if detected on first load
+document.querySelector("body").onload = () => changePage();
+
+// Detect & navigate from id in URL if detected from history
+window.onpopstate = () => changePage(false);
 
 // Core Navigation
 document.addEventListener("click", (event) => {
