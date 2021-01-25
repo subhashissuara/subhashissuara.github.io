@@ -110,7 +110,7 @@ body.dark-mode {
 
 .preloader-container.preloader-fade {
   /* Remember to Change time in JS too */
-  animation: fadeOutPreloader 2s ease-in;
+  animation: fadeOutPreloader 1s ease-in;
 }
 
 .preloader-container.preloader-hide {
