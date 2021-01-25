@@ -5,6 +5,7 @@
 const navMenuBtn = document.querySelector(".menu-btn");
 const navMenuDesktop = document.querySelector(".navbar-desktop");
 const navMenuMobile = document.querySelector(".navbar-mobile");
+const preloader = document.querySelector(".preloader-container");
 closeNavMenuBtn = document.querySelector(".close-nav-menu");
 menuFadeOut = document.querySelector(".menu-fade-out");
 navLinksList = navMenuDesktop.querySelectorAll("a");
@@ -165,6 +166,10 @@ modeBtn.addEventListener("click", () => {
 })();
 
 window.addEventListener("load", () => {
+  // Preloader
+  preloader.classList.add("preloader-hide");
+
+  // Dark Mode Icon
   if (document.body.classList.contains("dark-mode")) {
     modeBtn.querySelector("i").classList.add("fa-sun");
   } else {
