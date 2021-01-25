@@ -33,9 +33,19 @@
   background-image: url(../assets/images/bgeffects/memphis-colorful.png);
   background-repeat: repeat;
   background-size: auto;
-  animation: bgSlideAnimation 24s linear infinite;
+  animation: bgSlideAnimationLight 24s linear infinite;
   /* filter: blur(2px);
   -webkit-filter: blur(2px); */
+}
+
+/* Light Background Effect Animation */
+@keyframes bgSlideAnimationLight {
+  from {
+    background-position: 0 400px;
+  }
+  to {
+    background-position: 400px 0;
+  }
 }
 
 /* Dark Mode Variations */
@@ -57,7 +67,6 @@ body.dark-mode {
 }
 
 /* Dark Mode Background Animations */
-
 .bg-effect-dark {
   z-index: -999;
   position: fixed;
@@ -67,17 +76,18 @@ body.dark-mode {
   background-image: url(../assets/images/bgeffects/memphis-colorful-dark.png);
   background-repeat: repeat;
   background-size: auto;
-  animation: bgSlideAnimation 24s linear infinite;
+  animation: bgSlideAnimationDark 24s linear infinite;
   filter: blur(4px);
   -webkit-filter: blur(4px);
 }
 
-@keyframes bgSlideAnimation {
+/* Dark Background Effect Animation */
+@keyframes bgSlideAnimationDark {
   from {
-    background-position: 0 400px;
+    background-position: 400px 0;
   }
   to {
-    background-position: 400px 0;
+    background-position: 0 400px;
   }
 }
 
@@ -87,6 +97,24 @@ body.dark-mode {
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  /* Scrollbar Changes for Firefox */
+  scrollbar-width: 12px;
+  scrollbar-color: var(--color-black) var(--color-white);
+}
+
+/* Scrollbar Changes for Chrome & Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-white); /* Color of Tracking Area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-black); /* Color of Scroll Thumb */
+  border-radius: 10px; /* Curved Corners */
+  border: 2px solid var(--color-white); /* Padding */
 }
 
 *:not(i) {
