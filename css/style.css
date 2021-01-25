@@ -110,7 +110,7 @@ body.dark-mode {
 
 .preloader-container.preloader-fade {
   /* Remember to Change time in JS too */
-  animation: fadeOutPreloader 2s ease-in-out;
+  animation: fadeOutPreloader 2s ease-in;
 }
 
 .preloader-container.preloader-hide {
@@ -597,21 +597,20 @@ img {
 }
 
 .active-section {
-  /* animation: fadeOutSection 5s ease-out; */
+  animation: fadeInSection 0.3s ease-in-out;
   opacity: 1;
 }
 
 .section.hide-section {
-  /* animation: fadeOutSection 5s ease-out; */
   display: none;
 }
 
-@keyframes fadeOutSection {
+@keyframes fadeInSection {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
