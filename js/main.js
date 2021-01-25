@@ -167,7 +167,8 @@ modeBtn.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
   // Preloader
-  preloader.classList.add("preloader-hide");
+  preloader.classList.add("preloader-fade");
+  setInterval(() => preloader.classList.add("preloader-hide"), 2000);
 
   // Dark Mode Icon
   if (document.body.classList.contains("dark-mode")) {

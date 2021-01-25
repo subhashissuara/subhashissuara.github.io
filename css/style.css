@@ -108,10 +108,24 @@ body.dark-mode {
   background-color: var(--color-white);
 }
 
+.preloader-container.preloader-fade {
+  /* Remember to Change time in JS too */
+  animation: fadeOutPreloader 2s ease-in-out;
+}
+
 .preloader-container.preloader-hide {
   z-index: -9999;
   opacity: 0;
   visibility: hidden;
+}
+
+@keyframes fadeOutPreloader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .preloader-animation {
