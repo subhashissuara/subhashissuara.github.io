@@ -3,7 +3,7 @@
 */
 
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Light Mode Variations */
 :root {
@@ -200,7 +200,7 @@ body.dark-mode {
   margin-top: 20px;
   padding-left: 17px;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--color-black);
   text-align: center;
 }
@@ -232,7 +232,7 @@ body.dark-mode {
 }
 
 *:not(i) {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
@@ -361,7 +361,7 @@ img {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 60px;
-  font-weight: 800;
+  font-weight: 900;
   background: linear-gradient(
     to right,
     #00afd6,
@@ -428,7 +428,7 @@ img {
 .navbar-desktop .nav-menu .nav-links {
   padding: 12px 15px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 10%;
   transition: all 0.3s ease;
 }
@@ -527,7 +527,7 @@ img {
   .navbar-mobile .nav-menu .nav-links {
     padding: 15px;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 10%;
     transition: all 0.3s ease;
   }
@@ -573,7 +573,7 @@ img {
   display: inline-block;
   padding: 15px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 10%;
   color: var(--highlight-text-color);
   background-color: transparent;
@@ -592,7 +592,7 @@ img {
   display: inline-block;
   margin: 0;
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 700;
   color: var(--color-black);
 }
 
@@ -652,14 +652,14 @@ img {
   margin: 5px;
   color: var(--color-black);
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home-section .home-text h1 {
   margin: 5px;
   color: var(--color-black);
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .home-section .home-text a {
@@ -711,7 +711,7 @@ img {
 
 .about-section .about-info p {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   text-align: justify;
   color: var(--color-black);
@@ -849,7 +849,7 @@ video {
   width: 100%;
   margin: 10px;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -869,6 +869,7 @@ video {
 
 .project-links a {
   color: var(--highlight-text-color);
+  font-weight: 600;
   padding: 10px 15px;
   border-radius: 10%;
   transition: all 0.3s ease;
@@ -881,13 +882,13 @@ video {
 
 .projects-more h2 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--color-black);
 }
 
 .projects-more a {
   color: var(--highlight-text-color);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* Project Mobile */
@@ -906,13 +907,13 @@ video {
 
 .contact-email h2 {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--color-black);
 }
 
 .contact-email a {
   color: var(--highlight-text-color);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .contact-section .contact-form {
@@ -936,6 +937,7 @@ video {
   border-radius: 10px;
   padding: 15px;
   font-size: 18px;
+  font-weight: 500;
   color: var(--color-black);
   transition: all 0.3 ease;
   -webkit-appearance: none;
@@ -951,6 +953,7 @@ video {
   border-radius: 10px;
   padding: 15px;
   font-size: 18px;
+  font-weight: 500;
   color: var(--color-black);
   transition: all 0.3 ease;
   -webkit-appearance: none;
@@ -987,16 +990,17 @@ video {
 .copyright-footer p {
   color: var(--color-black);
   font-size: 15px;
+  font-weight: 600;
 }
 
 .copyright-footer p a {
-  font-weight: bold;
+  font-weight: 600;
   color: var(--highlight-text-color);
   transition: color 0.3s linear;
 }
 
 .copyright-footer p a:hover {
-  font-weight: bold;
+  font-weight: 600;
   background: linear-gradient(
     to right,
     #48bfe3,
