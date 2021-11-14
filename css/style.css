@@ -362,17 +362,7 @@ img {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 60px;
   font-weight: 900;
-  background: linear-gradient(
-    to right,
-    #00afd6,
-    #48bfe3,
-    #9cd400,
-    #d6d136,
-    #f0d000,
-    #ecb900,
-    #fe7f2d,
-    #ff0000
-  );
+  background: linear-gradient(to right, #00afd6, #48bfe3, #9cd400, #d6d136, #f0d000, #ecb900, #fe7f2d, #ff0000);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1001,17 +991,7 @@ video {
 
 .copyright-footer p a:hover {
   font-weight: 600;
-  background: linear-gradient(
-    to right,
-    #48bfe3,
-    #48d1e3,
-    #9cd400,
-    #d6d136,
-    #f0d000,
-    #ffc600,
-    #fe7f2d,
-    #ff0000
-  );
+  background: linear-gradient(to right, #48bfe3, #48d1e3, #9cd400, #d6d136, #f0d000, #ffc600, #fe7f2d, #ff0000);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1041,14 +1021,7 @@ video {
 
   .copyright-footer p a {
     font-weight: bold;
-    background: linear-gradient(
-      to right,
-      #48bfe3,
-      #9cd400,
-      #f0d000,
-      #fe7f2d,
-      #ff0000
-    );
+    background: linear-gradient(to right, #48bfe3, #9cd400, #f0d000, #fe7f2d, #ff0000);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
