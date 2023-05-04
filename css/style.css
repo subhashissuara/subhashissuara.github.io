@@ -638,17 +638,17 @@ img {
   font-weight: 500;
 }
 
-.home-section .home-text h2 {
-  margin: 5px;
-  color: var(--color-black);
-  font-size: 50px;
-  font-weight: 600;
-}
-
 .home-section .home-text h1 {
   margin: 5px;
   color: var(--color-black);
-  font-size: 24px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.home-section .home-text h2 {
+  margin: 5px;
+  color: var(--color-black);
+  font-size: 21px;
   font-weight: 500;
 }
 
@@ -687,8 +687,8 @@ img {
     text-align: center;
   }
 
-  .home-section .home-text h2 {
-    font-size: 40px;
+  .home-section .home-text h1 {
+    font-size: 32px;
   }
 }
 
