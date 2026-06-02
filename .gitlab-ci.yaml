@@ -1,0 +1,16 @@
+image: alpine:latest
+
+before_script: 
+  - mkdir -p public
+
+pages:
+  script:
+    # Copy all repository contents except the public directory to the 'public' folder
+    - find . -maxdepth 1 -mindepth 1 ! -name 'public' -exec cp -r {} public/ \;
+  artifacts:
+    paths:
+      # The folder that contains the files to be exposed at the Page URL
+      - public
+  rules:
+    # Ensure only pushes to the default branch trigger a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
