@@ -17,6 +17,10 @@ navLinksList.forEach((navLink) => {
   hashIdList.push(navLink.hash);
 });
 
+// Set Current Year in Copyright
+document.getElementById('copyright-current-year-subhashis-suara').textContent =
+        new Date().getFullYear();
+
 /*
   IIFEs
 */
